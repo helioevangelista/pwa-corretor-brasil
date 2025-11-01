@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corretor Brasil</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icon.png">
+  <meta name="theme-color" content="#87CEEB">
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <img src="assets/icon.png" alt="Corretor Brasil" class="logo" width="80" />
+      <h1>Corretor Brasil</h1>
+      <p>O marketplace para corretores de imóveis de todo o Brasil.</p>
+    </header>
+    <section id="content">
+      <p>Bem-vindo ao Corretor Brasil PWA - versão 2 com nova identidade visual.</p>
+    </section>
+    <footer>
+      <p>Desenvolvido por LoteamentoX • Suporte: <a href="mailto:appcorretorbrasil@gmail.com">appcorretorbrasil@gmail.com</a></p>
+    </footer>
+  </main>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').catch(err => console.warn('Falha ao registrar SW:', err));
+    }
+  </script>
+</body>
+</html>
